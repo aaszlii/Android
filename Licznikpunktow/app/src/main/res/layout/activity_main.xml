@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Myśliwski licznik punktów"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="32dp"/>
+
+    <Button
+        android:id="@+id/buttonNewSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nowa sesja"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#673AB7"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia wyników"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#673AB7"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/buttonFindShootingRanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Znajdź strzelnice w okolicy"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button" />
+
+</LinearLayout>

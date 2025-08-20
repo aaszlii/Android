@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Licznikpunktow" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#2E7D32</item> <!-- ciemniejsza zieleń -->
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.Licznikpunktow" parent="Base.Theme.Licznikpunktow" />
+</resources>

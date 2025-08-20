@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewSessionActivity"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/editCompetitionName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Konkurencja (np. trap, dzik)"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Data (np. 23.05.2025)"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        app:layout_constraintTop_toBottomOf="@+id/editCompetitionName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+    <EditText
+        android:id="@+id/editPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Liczba trafień (np. 22)"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/editDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonSaveSession"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Zapisz sesję"
+        app:layout_constraintTop_toBottomOf="@+id/editPoints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
